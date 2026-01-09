@@ -1,6 +1,50 @@
-<html>
-  <head></head>
-  <body>
-    <h1>Hello Github !</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Hello Github ! 👋</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://cdn.unilim.fr/vendor/tsparticles/confetti.js"></script>
+    <style>
+        html {
+            color-scheme: light dark;
+        }
+
+        body {
+            width: 20em;
+            margin: 5em auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello Github ! 👋</h1>
+    <p>Bienvenue sur cette magnifique page.</p>
+
+    <script>
+        // https://confetti.js.org/more.html
+        const defaults = {
+            spread: 360,
+            ticks: 100,
+            gravity: 0,
+            decay: 0.94,
+            startVelocity: 30,
+            };
+
+            function shoot() {
+                confetti({
+                    ...defaults,
+                    particleCount: 500,
+                    scalar: 1,
+                    shapes: ["circle"],
+                    colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
+                });
+            }
+
+            setTimeout(shoot, 0);
+            setTimeout(shoot, 100);
+            setTimeout(shoot, 200);
+            setTimeout(shoot, 800);
+    </script>
+</body>
 </html>
